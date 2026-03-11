@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.XR;
 
-public class Capsula : MonoBehaviour
+public class Capsula1 : MonoBehaviour
 {
     public bool variable1;
     public bool variable2;
@@ -20,28 +20,28 @@ public class Capsula : MonoBehaviour
     }
     private void FixedUpdate()
     {
-        //A   B   AND
+        //A   B    OR
         //1   1    1
-        //1   0    0
-        //0   1    0
+        //1   0    1
+        //0   1    1
         //0   0    0
      
         
         
-        if (variable1 && variable2)
+        if (variable1 || variable2)
         {
             rendererComponent.material.color = Color.white;
             Debug.Log("La operacion 1 es Verdadero");
         }
-        else if (variable1 && !variable2)
+        else if (variable1 || !variable2)
         {
-            rendererComponent.material.color = Color.black;
-            Debug.Log("La operacion 2 es Falsa");
+            rendererComponent.material.color = Color.white;
+            Debug.Log("La operacion 2 es Verdadero");
         }
-        else if (!variable1 && variable2)
+        else if (!variable1 || variable2)
         {
-            rendererComponent.material.color = Color.black;
-            Debug.Log("La operacion 3 es Falsa");
+            rendererComponent.material.color = Color.white;
+            Debug.Log("La operacion 3 es Verdadero");
         }
         else
         {
