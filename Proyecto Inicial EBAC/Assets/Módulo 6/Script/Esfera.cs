@@ -2,11 +2,12 @@ using UnityEngine;
 
 public class Esfera : MonoBehaviour
 {
-    bool variable1;
+    public bool variable2;
+    private MeshRenderer rendererComponent;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        
+        rendererComponent = GetComponent<MeshRenderer>();
     }
 
     // Update is called once per frame
@@ -16,19 +17,15 @@ public class Esfera : MonoBehaviour
     }
     private void FixedUpdate()
     {
-        if (variable1 == false)
+        if (variable2)
         {
-            MeshRenderer Falso = GetComponent<MeshRenderer>();
-            Falso.material.color = Color.black;
-            Debug.Log("Es Falso(Negro)");
+            rendererComponent.material.color = Color.black;
+            Debug.Log("Es Falso(Negro)(2)");
         }
         else
         {
-            MeshRenderer Verdadero = GetComponent<MeshRenderer>();
-            Verdadero.material.color = Color.white;
-            Debug.Log("Es Verdadero(Blanco)");
+            rendererComponent.material.color = Color.white;
+            Debug.Log("Es Verdadero(Blanco)(2)");
         }
-
-        variable1 = !variable1;
-     }
+    }
  }

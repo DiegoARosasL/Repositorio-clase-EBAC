@@ -3,12 +3,14 @@ using UnityEngine;
 
 public class Cubo : MonoBehaviour
 {
-    bool variable1;
-    
+    public bool variable1;
+    private MeshRenderer rendererComponent;
+
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-       
+        rendererComponent = GetComponent<MeshRenderer>();
     }
 
     // Update is called once per frame
@@ -19,19 +21,17 @@ public class Cubo : MonoBehaviour
         }
     private void FixedUpdate()
     {
-        if (variable1 == false)
+        if (variable1)
         {
-            MeshRenderer Falso = GetComponent<MeshRenderer>();
-            Falso.material.color = Color.black;
-            Debug.Log("Es Falso(Negro)");
+            rendererComponent.material.color = Color.black;
+            Debug.Log("Es Falso(Negro)(1)");
         }
         else
         {
-            MeshRenderer Verdadero = GetComponent<MeshRenderer>();
-            Verdadero.material.color = Color.white;
-            Debug.Log("Es Verdadero(Blanco)");
+            rendererComponent.material.color = Color.white;
+            Debug.Log("Es Verdadero(Blanco)(1)");
         }
 
-        variable1 = !variable1;
+        
     }
 }
