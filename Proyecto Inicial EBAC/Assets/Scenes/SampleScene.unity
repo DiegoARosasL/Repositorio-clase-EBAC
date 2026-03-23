@@ -342,7 +342,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 330585543}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7cbcb86139048224c8dcec369deeaf4d, type: 3}
   m_Name: 
@@ -702,6 +702,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac1901c5488ccad449a87ed1ade87349, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NewMonoBehaviourScript
+--- !u!114 &1434972267
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1434972260}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8543cb91c71b0724da9186c8ee04fc3a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EjerciciosdeCiclosyarreglos
 --- !u!1 &1689559929 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1987952182643281651, guid: 37f3031bd2edd824b8c77deb9085a616, type: 3}
@@ -851,6 +863,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 3681020874596288569, guid: b6bf11ccfe618104f852d318b28233ec, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1434972266}
+    - targetCorrespondingSourceObject: {fileID: 3681020874596288569, guid: b6bf11ccfe618104f852d318b28233ec, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1434972267}
   m_SourcePrefab: {fileID: 100100000, guid: b6bf11ccfe618104f852d318b28233ec, type: 3}
 --- !u!1001 &4028516314664076555
 PrefabInstance:
